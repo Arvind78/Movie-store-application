@@ -12,27 +12,31 @@ header{
     justify-content:space-between;
     align-items:center;
     height:50px;
-    padding:0px 30px;
+    padding:0px;
+    /* overflow: hidden; */
     width:100%;
     background-color:rgba(209, 208, 214, 0.871);
     color:white;
 } 
 #logo{
-    font-size:25px;
+    font-size:20px;
     background:none;
     font-weight:bold;
     color:rgb(5, 5, 44);
 }
 #Search{
     background:none;
-    padding:8px 14px;
-    /* margin-right:50px; */
-    border-radius:30px;
-    font-size:18px;
-     color:white;
+    color:white;
+
     outline:none;
  
 }
+input{
+    padding: 10px;
+    border-radius:30px;
+     
+}
+
 #Search::placeholder{
     color:white;
     font-size:16px;
@@ -115,3 +119,93 @@ span.red{
     transform: translateY(0%);
     transition: 0.3s ease-in;
 }
+@media screen and (max-width: 430px) {
+    body {
+      background-color: lightgreen;
+    }
+   
+header{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    height:50px;
+    padding:0px;
+    /* overflow: hidden; */
+    width:100%;
+    background-color:rgba(209, 208, 214, 0.871);
+    color:white;
+} 
+#logo{
+    font-size:25px;
+    background:none;
+    font-weight:bold;
+    color:rgb(5, 5, 44);
+}
+ input{
+    background:none;
+    padding:5px 0px;
+ 
+    border-radius:30px;
+    
+ 
+}
+#Search::placeholder{
+    color:white;
+    font-size:16px;
+     
+
+}
+ 
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:-20px;
+    justify-content:space-around;
+}
+
+.movie {
+   width:300px;
+   
+    border-radius: 3px;
+    margin: 0.3rem;
+    color: #fff;
+   
+    /* background-color: red; */
+    background-color: rgba(45, 13, 100, 0.746);
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+
+}
+
+
+  }
+
+  @media screen and (max-width: 240px) {
+    body {
+      background-color: lightgreen;
+    }
+   
+header{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items:center;
+    height:50px;
+    padding:0px;
+    overflow: hidden;
+    width:100%;
+    background-color:rgba(209, 208, 214, 0.871);
+    color:white;
+}  
+input{
+    width:fit-content;
+}
+#logo{
+    display:none;
+}
+  }
