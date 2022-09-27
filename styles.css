@@ -141,20 +141,8 @@ header{
     font-weight:bold;
     color:rgb(5, 5, 44);
 }
- input{
-    background:none;
-    padding:5px 0px;
  
-    border-radius:30px;
-    
  
-}
-#Search::placeholder{
-    color:white;
-    font-size:16px;
-     
-
-}
  
 
 .main {
@@ -206,6 +194,6 @@ input{
     width:fit-content;
 }
 #logo{
-    display:none;
+    display:block;
 }
   }
